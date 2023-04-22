@@ -11,7 +11,7 @@ import SwiftUI
 struct Analog_Clock__SwiftUI_App: App {
     var body: some Scene {
         WindowGroup {
-            ClockView(viewModel: ClockViewModel())
+            ContentView()
         }
     }
 }
