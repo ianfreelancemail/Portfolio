@@ -8,25 +8,27 @@
 import SwiftUI
 
 struct CartRowView: View {
-    var item: CartItem
+    var cartItem: CartItem
     var body: some View {
         HStack {
-            Image(item.image)
+            Image(cartItem.item.image)
             
             VStack {
-                Text((item.name))
-                Text((item.seller?.name ?? ""))
-            }
-
-            VStack {
-                Text()
-                HStack {
-                    Button("-") {
-                        print("didTapMinus")
-                    }
-                    Spacer()
-                    Button("+") {
-                        print("didTapMinus")
+                Text(cartItem.item.name)
+                VStack {
+                    Text(String(cartItem.count))
+                    HStack {
+                        Button("-") {
+                            print("didTapMinus")
+                            if cartItem.count > 0 {
+//                                cartItem.reduceCount()
+                            }
+                        }
+                        Spacer()
+                        Button("+") {
+                            print("didTapPlus")
+//                            cartItem.addCount()
+                        }
                     }
                 }
             }

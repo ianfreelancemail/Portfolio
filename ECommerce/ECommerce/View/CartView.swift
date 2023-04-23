@@ -13,13 +13,13 @@ struct CartView: View {
     var body: some View {
         NavigationView {
             List(viewModel.items) { cartItem in
-                CartRowView(item: cartItem)
+                CartRowView(cartItem: cartItem)
                     .listRowBackground(Color.black)
                     .listRowSeparator(.visible)
             }
             .listStyle(.plain)
             .background(Color.black)
-            .navigationBarTitle("Notifications", displayMode: .automatic)
+            .navigationBarTitle("Cart", displayMode: .automatic)
         }
     }
 }

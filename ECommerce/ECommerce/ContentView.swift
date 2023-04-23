@@ -7,34 +7,11 @@
 
 import SwiftUI
 
-import SwiftUI
 
 struct ContentView: View {
     @State private var selectedTab = 0
     
-    init() {
-        if #available(iOS 15, *) {
-            let navigationBarAppearance = UINavigationBarAppearance()
-            navigationBarAppearance.configureWithOpaqueBackground()
-            navigationBarAppearance.titleTextAttributes = [
-                NSAttributedString.Key.foregroundColor : UIColor.white
-            ]
-            navigationBarAppearance.largeTitleTextAttributes = [
-                NSAttributedString.Key.foregroundColor : UIColor.white
-            ]
-            navigationBarAppearance.backgroundColor = UIColor.black
-            UINavigationBar.appearance().standardAppearance = navigationBarAppearance
-            UINavigationBar.appearance().compactAppearance = navigationBarAppearance
-            UINavigationBar.appearance().scrollEdgeAppearance = navigationBarAppearance
-            
-            let tabBarApperance = UITabBarAppearance()
-            tabBarApperance.configureWithOpaqueBackground()
-            tabBarApperance.backgroundColor = UIColor.black
-            UITabBar.appearance().scrollEdgeAppearance = tabBarApperance
-            UITabBar.appearance().standardAppearance = tabBarApperance
-        }
-    }
-
+    
     var body: some View {
         TabView(selection: $selectedTab) {
             HomeView()
@@ -49,8 +26,11 @@ struct ContentView: View {
                 }
             PostItemView()
                 .tabItem {
-                    Image(systemName: "plus")
-                    Text("Post Item")
+                    VStack {
+                        Image(systemName: "plus")
+                        Text("Post Item")
+                    }
+                    .scaleEffect(1.5)
                 }
             CartView()
                 .tabItem {
@@ -63,12 +43,12 @@ struct ContentView: View {
                     Text("Profile")
                 }
         }
-        .background(Color.black)
+        
     }
 }
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
 }
+

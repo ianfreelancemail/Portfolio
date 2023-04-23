@@ -8,7 +8,18 @@
 import SwiftUI
 
 struct CartItem: Identifiable, Decodable {
-    let id = UUID()
+    var id = UUID()
     var item: Item
     var count: Int
+    
+    
+    mutating func reduceCount() {
+        if count > 0 {
+            count -= 1
+        }
+    }
+    
+    mutating func addCount() {
+        count += 1
+    }
 }

@@ -34,6 +34,7 @@
 		3CDEC9D429F53016004AE7E4 /* CartRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDEC9D329F53016004AE7E4 /* CartRowView.swift */; };
 		3CDEC9D629F53082004AE7E4 /* Seller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDEC9D529F53082004AE7E4 /* Seller.swift */; };
 		3CDEC9D829F53199004AE7E4 /* CartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDEC9D729F53199004AE7E4 /* CartItem.swift */; };
+		3CDEC9DA29F562DD004AE7E4 /* ItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDEC9D929F562DD004AE7E4 /* ItemDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 		3CDEC9D329F53016004AE7E4 /* CartRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartRowView.swift; sourceTree = "<group>"; };
 		3CDEC9D529F53082004AE7E4 /* Seller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seller.swift; sourceTree = "<group>"; };
 		3CDEC9D729F53199004AE7E4 /* CartItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItem.swift; sourceTree = "<group>"; };
+		3CDEC9D929F562DD004AE7E4 /* ItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,18 +119,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		3CDEC9B829F4EEA3004AE7E4 /* Tabs */ = {
-			isa = PBXGroup;
-			children = (
-				3CDEC9AC29F4EB4B004AE7E4 /* HomeView.swift */,
-				3CDEC9C529F5156D004AE7E4 /* NotificationView.swift */,
-				3CDEC9B229F4EE8E004AE7E4 /* PostItemView.swift */,
-				3CDEC9B429F4EE92004AE7E4 /* CartView.swift */,
-				3CDEC9B629F4EE97004AE7E4 /* ProfileView.swift */,
-			);
-			path = Tabs;
-			sourceTree = "<group>";
-		};
 		3CDEC9B929F4EEB8004AE7E4 /* UI Fragment */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,7 +158,12 @@
 			isa = PBXGroup;
 			children = (
 				3CDEC9B929F4EEB8004AE7E4 /* UI Fragment */,
-				3CDEC9B829F4EEA3004AE7E4 /* Tabs */,
+				3CDEC9AC29F4EB4B004AE7E4 /* HomeView.swift */,
+				3CDEC9C529F5156D004AE7E4 /* NotificationView.swift */,
+				3CDEC9B229F4EE8E004AE7E4 /* PostItemView.swift */,
+				3CDEC9B429F4EE92004AE7E4 /* CartView.swift */,
+				3CDEC9B629F4EE97004AE7E4 /* ProfileView.swift */,
+				3CDEC9D929F562DD004AE7E4 /* ItemDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -279,6 +274,7 @@
 				3CDEC9D229F52F55004AE7E4 /* CartViewModel.swift in Sources */,
 				3CDEC9BF29F507AC004AE7E4 /* HomeViewModel.swift in Sources */,
 				3CDEC9B529F4EE92004AE7E4 /* CartView.swift in Sources */,
+				3CDEC9DA29F562DD004AE7E4 /* ItemDetailView.swift in Sources */,
 				3CDEC99529F4E9D0004AE7E4 /* ECommerceApp.swift in Sources */,
 				3CDEC9AD29F4EB4B004AE7E4 /* HomeView.swift in Sources */,
 				3CDEC9C229F50E93004AE7E4 /* BannerScrollView.swift in Sources */,
